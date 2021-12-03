@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getphone_contacts.AboutActivity">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llya_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/img_return" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tva_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="关于"
+            android:textColor="@color/main_def_text_color33"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tva_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:text="
+本软件部分素材来自于网络，如有侵权请联系我删除。\n
+作者邮箱：soruku@foxmail.com\n
+软件开源地址：https://github.com/koukihk/KContacts\n\n
+使用方式：\n
+1.点按联系人头像、姓名或电话，弹出Toast展示联系人详情\n
+2.长按联系人头像，可对联系人进行删除操作\n
+3.长按联系人姓名或电话，可将联系人电话复制到剪切板\n
+4.点击联系人视图右上角的“+”，可进行添加联系人操作，点击“✓”以保存\n\n
+第一次使用软件时，需要获取您手机的通讯录与拨号权限，软件获取的信息均保存在本地不会上传至云端，软件不会进行侵犯隐私的行为，请放心使用。"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but_acontact"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="488dp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:text="联系作者"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but_asite"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="556dp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:text="前往开源地址"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

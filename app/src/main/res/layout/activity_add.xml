@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getphone_contacts.AboutActivity">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llyd_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/img_return" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvd_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="添加联系人"
+            android:textColor="@color/main_def_text_color33"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/llyd_add"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/yes" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etd_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:hint="请输入姓名"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etd_phone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:hint="请输入号码"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

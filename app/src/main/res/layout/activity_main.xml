@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getphone_contacts.MainActivity">
+
+    <Button
+        android:id="@+id/but_phone"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="194dp"
+        android:text="获取手机通讯录"
+        android:background="@drawable/button_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but_about"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="294dp"
+        android:text="关于本软件"
+        android:background="@drawable/button_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
