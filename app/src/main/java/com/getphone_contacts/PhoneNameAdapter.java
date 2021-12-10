@@ -178,7 +178,8 @@ public class PhoneNameAdapter extends BaseAdapter implements SectionIndexer {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_DIAL);
+                //intent.setAction(Intent.ACTION_DIAL);
+                intent.setAction(Intent.ACTION_CALL);
                 Uri tel = Uri.parse("tel:" + content.getTelPhone());
                 intent.setData(tel);
                 mContext.startActivity(intent);
