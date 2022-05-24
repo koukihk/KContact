@@ -15,9 +15,7 @@
 - 长按联系人姓名或电话，可将联系人电话复制到剪切板
 - 点击联系人视图右上角的“+”，可进行添加联系人操作，点击“✓”以保存
 
-#### 截图
 
-![](https://cdn.jsdelivr.net/gh/koukihk/FileHosting/PIC/shot.jpg)
 
 #### LICENSE
 
