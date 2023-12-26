@@ -15,8 +15,18 @@
 - 长按联系人姓名或电话，可将联系人电话复制到剪切板
 - 点击联系人视图右上角的“+”，可进行添加联系人操作，点击“✓”以保存
 
+### Simple Android Contacts App Demo
 
+#### Features:
+- Fresh color scheme with a minimalistic layout
+- Support for WaveSideBar for side indexing, SmartRefreshLayout for intelligent refreshing, and fuzzy search
+- Based on ContentProvider, enabling CRUD operations on the contacts database
+- Loosely-coupled modules for easy customization and modification
+- Simple configuration, no additional dependencies required; can be imported into Android Studio for immediate use
 
-#### LICENSE
+#### Usage:
+- Tap on a contact's avatar, name, or phone number to display contact details via Toast notifications
+- Long-press a contact's avatar to delete the respective contact
+- Long-press a contact's name or phone number to copy the phone number to the clipboard
+- Click on the "+" icon in the top-right corner of the contact view to add a new contact; click "✓" to save changes
 
-MIT License
